@@ -1,0 +1,3 @@
+[submodule "src/scss/w3scss"]
+	path = src/scss/w3scss
+	url = git@github.com:TeaRexing/w3scss.git
