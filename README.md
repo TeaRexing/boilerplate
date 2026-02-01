@@ -1,4 +1,4 @@
-# NPMBP
+# Boilerplate (ehemals NPMBP) 
 Das Akronym 'NPMBP' hält hoffentlich, was es verspricht. Eine super simple **B**oiler**P**late zum Erstellen von statischen Websiten ausschließlich mit **NPM**-Skripten.
 
 Die Skripte sind vorwiegend von diesem [Blog-Post](https://wweb.dev/blog/how-to-create-static-website-npm-scripts/#html) *inspiriert*, bzw. übernommen. Also ein großes Dankeschön an [@wweb.dev](https://github.com/wwebdev) für den sehr gelungenen Beitrag. 
