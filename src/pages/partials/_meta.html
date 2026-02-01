@@ -1,0 +1,21 @@
+<meta charset="utf-8" />
+<content></content>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="description" content="{{ site.description}}"/>
+<meta name="keywords" content="{{ site.keywords }}"/>
+<each loop="item in {{ site.authors }}">
+  <meta name="author" content="{{ item }}"/>
+</each>
+<meta property="og:title" content="{{ site.title }}">
+<meta property="og:description" content="{{ site.description }}">
+<meta property="og:type" content="{{ site.type }}">
+<meta property="og:url" content="{{ site. url }}">
+<meta property="og:image" content="/icon.png">
+
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" href="/icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/icon.png">
+
+<link rel="stylesheet" type="text/css" href="/index.css">
+
+<link rel="manifest" href="site.webmanifest">

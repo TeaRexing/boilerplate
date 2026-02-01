@@ -1,0 +1,31 @@
+{
+  "input": "./src/pages/*.html",
+  "output": "./public_html",
+  "plugins": {
+    "posthtml-modules": {
+      "root": "./src/pages/partials/",
+      "initial": true,
+      "attributesAsLocals": true,
+      "locals": {
+        "site": {
+          "title": "Static Website Template",
+          "description": "Site Description",
+          "type": "Website",
+          "url": "https://example.com",
+          "keywords": "Statice Template Keywords",
+          "authors": [
+            "John Doe",
+            "Max Muster"
+          ],
+          "socials": {
+            "facebook": "https://www.facebook.com/johndoe",
+            "instagram": "https://www.instagram.com/johndoe",
+            "github": "https://www.github.com/johndoe"
+          }
+        }
+      }
+    },
+    "posthtml-lorem": {},
+    "htmlnano": {}
+  }
+}
