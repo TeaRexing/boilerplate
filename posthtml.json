@@ -13,6 +13,7 @@
           "type": "Website",
           "url": "https://example.com",
           "year": "2026",
+          "language": "en",
           "keywords": "Statice Template Keywords",
           "authors": [
             "John Doe",
