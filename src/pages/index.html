@@ -1,13 +1,23 @@
 <!DOCTYPE html>
-<html lang="de">
-  <head>
-    <module href="/_meta.html">
-      <title>Test Title - {{ site.title }}</title>
-    </module>
-  </head>
-  <body>
-    <h1>Static Website Template</h1>
-    <p lorem="2"></p>
-    <script src="./bundle.js"></script>
-  </body>
+<html lang="{{ site.language }}">
+
+<head>
+  <!-- this include the _meta.html-partial with given content (the site title) -->
+  <!-- everything between the module-tags is considered content -->
+  <module href="/_meta.html">
+    <title>Test Title - {{ site.title }}</title>
+  </module>
+</head>
+
+<body style="background-color: #fafafa;">
+  <!-- place your content here -->
+  <module href="/_text.html">
+      <!-- a partial without given content or block local variables -->
+  </module>
+  <!-- you may want to consider to create a partial for header and footer... -->
+  <!-- ... or even every block -->
+  <!-- all your js will be bundled with webpack -->
+  <script src="./bundle.js"></script>
+</body>
+
 </html>
