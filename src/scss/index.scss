@@ -1,15 +1,16 @@
-//
-// Static Imports
-//
+/*
+Static Imports
+*/
 
-//
-// Local Variables
-//
+/*
+Local Variables
+*/
 $base-spacing: 8px;
 
-//
-// Dynamic Imports
-// for my sass files check: https://github.com/TeaRexing/w3scss
+/*
+Dynamic Imports
+for my sass files check: https://github.com/TeaRexing/w3scss
+*/
 @use './w3scss/src/main.scss' with ($base-font: "Roboto Condensed",
   $heading-font: "Roboto Condensed",
   $base-spacing: $base-spacing);
