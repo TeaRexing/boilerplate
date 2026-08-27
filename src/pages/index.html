@@ -1,23 +1,217 @@
 <!DOCTYPE html>
-<html lang="{{ site.language }}">
-
+<html lang="de">
 <head>
-  <!-- this include the _meta.html-partial with given content (the site title) -->
-  <!-- everything between the module-tags is considered content -->
-  <module href="/_meta.html">
-    <title>Test Title - {{ site.title }}</title>
-  </module>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Klassen-Referenz | w3scss</title>
+    <link rel="stylesheet" href="index.css">
 </head>
+<body class="w3-1">
 
-<body style="background-color: #fafafa;">
-  <!-- place your content here -->
-  <module href="/_text.html">
-      <!-- a partial without given content or block local variables -->
-  </module>
-  <!-- you may want to consider to create a partial for header and footer... -->
-  <!-- ... or even every block -->
-  <!-- all your js will be bundled with webpack -->
-  <script src="./bundle.js"></script>
+    <div class="w3-container w3-padding-32">
+        <h1>w3scss Klassen-Referenz</h1>
+        <p class="w3-large">Ein Mockup zur Ansicht, keine Produktionsseite. Zeigt Typografie, Farbpalette, Abstände und Grid in Aktion.</p>
+    </div>
+
+    <!-- TYPOGRAFIE -->
+    <div class="w3-container w3-padding-32">
+        <h2 class="w3-border-bottom w3-padding-16">Typografie</h2>
+
+        <h1>Überschrift h1</h1>
+        <h2>Überschrift h2</h2>
+        <h3>Überschrift h3</h3>
+        <h4>Überschrift h4</h4>
+        <h5>Überschrift h5</h5>
+        <h6>Überschrift h6</h6>
+
+        <p>Standard-Absatz. Für IT-Dienstleistungen im Raum Hannover braucht es klare, gut lesbare Texte ohne Schnickschnack.</p>
+
+        <p class="w3-small">w3-small — für Fußnoten, Bildunterschriften, Metainformationen.</p>
+        <p class="w3-large">w3-large — etwas größerer Fließtext, z. B. Einleitungssätze.</p>
+        <p class="w3-xlarge">w3-xlarge — Zwischenüberschrift oder Zitat.</p>
+        <p class="w3-xxlarge">w3-xxlarge — starke Betonung.</p>
+        <p class="w3-xxxlarge">w3-xxxlarge — Hero-Zahlen, große Claims.</p>
+
+        <p class="w3-serif">w3-serif — Serifenschrift für einen klassischeren Ton.</p>
+
+        <p class="w3-center">w3-center — zentrierter Text.</p>
+    </div>
+
+    <!-- FARBEN -->
+    <div class="w3-container w3-padding-32">
+        <h2 class="w3-border-bottom w3-padding-16">Farbpalette</h2>
+        <p>Hintergrundfarben w3-1 bis w3-6, jeweils mit passender Textfarbe für Lesbarkeit.</p>
+
+        <div class="w3-row-padding w3-margin-bottom">
+            <div class="w3-col s6 m4 l2 w3-margin-bottom">
+                <div class="w3-1 w3-text-6 w3-padding-16 w3-round">
+                    <strong>w3-1</strong><br>#2d3748
+                </div>
+            </div>
+            <div class="w3-col s6 m4 l2 w3-margin-bottom">
+                <div class="w3-2 w3-text-5 w3-padding-16 w3-round">
+                    <strong>w3-2</strong><br>#a0aec0
+                </div>
+            </div>
+            <div class="w3-col s6 m4 l2 w3-margin-bottom">
+                <div class="w3-3 w3-text-6 w3-padding-16 w3-round">
+                    <strong>w3-3</strong><br>#4a5568
+                </div>
+            </div>
+            <div class="w3-col s6 m4 l2 w3-margin-bottom">
+                <div class="w3-4 w3-text-5 w3-padding-16 w3-round">
+                    <strong>w3-4</strong><br>#718096
+                </div>
+            </div>
+            <div class="w3-col s6 m4 l2 w3-margin-bottom">
+                <div class="w3-5 w3-text-6 w3-padding-16 w3-round">
+                    <strong>w3-5</strong><br>#000
+                </div>
+            </div>
+            <div class="w3-col s6 m4 l2 w3-margin-bottom">
+                <div class="w3-6 w3-text-5 w3-padding-16 w3-round">
+                    <strong>w3-6</strong><br>#fff
+                </div>
+            </div>
+        </div>
+
+        <p>Reine Textfarben ohne Hintergrund, z. B. für Akzente in Fließtext:</p>
+        <p><span class="w3-text-2">w3-text-2</span> &nbsp; <span class="w3-text-3">w3-text-3</span> &nbsp; <span class="w3-text-4">w3-text-4</span></p>
+    </div>
+
+    <!-- ABSTÄNDE -->
+    <div class="w3-container w3-padding-32">
+        <h2 class="w3-border-bottom w3-padding-16">Padding &amp; Margin</h2>
+        <p>Boxen mit Rahmen, damit der jeweilige Innenabstand sichtbar wird.</p>
+
+        <div class="w3-border w3-3 w3-margin-bottom w3-padding">
+            w3-padding (Standard, 8px)
+        </div>
+        <div class="w3-border w3-3 w3-margin-bottom w3-padding-16">
+            w3-padding-16
+        </div>
+        <div class="w3-border w3-3 w3-margin-bottom w3-padding-24">
+            w3-padding-24
+        </div>
+        <div class="w3-border w3-3 w3-margin-bottom w3-padding-32">
+            w3-padding-32
+        </div>
+
+        <div class="w3-border w3-3">
+            <div class="w3-6 w3-text-5 w3-margin">
+                w3-margin (Außenabstand rundherum, Standard 8px)
+            </div>
+            <div class="w3-6 w3-text-5 w3-margin-top w3-margin-bottom">
+                w3-margin-top + w3-margin-bottom
+            </div>
+        </div>
+    </div>
+
+    <!-- CONTAINER, GRID & CARDS -->
+    <div class="w3-container w3-padding-32">
+        <h2 class="w3-border-bottom w3-padding-16">Container, Grid &amp; Card</h2>
+        <p>Zweispaltig ab 600px, dreispaltig ab 992px (passend zu euren bestehenden Breakpoints).</p>
+
+        <div class="w3-row-padding">
+            <div class="w3-col s12 m6 l4 w3-margin-bottom">
+                <div class="w3-card w3-3 w3-text-6 w3-round-large w3-padding-24">
+                    <h4>Cloud &amp; Infrastruktur</h4>
+                    <p class="w3-small">Beispielhafte Karte im w3-card-Stil, abgerundet mit w3-round-large.</p>
+                </div>
+            </div>
+            <div class="w3-col s12 m6 l4 w3-margin-bottom">
+                <div class="w3-card w3-3 w3-text-6 w3-round-large w3-padding-24">
+                    <h4>IT-Sicherheit &amp; Backup</h4>
+                    <p class="w3-small">Zweite Spalte, gleiche Klassen, zeigt das Grid-Verhalten.</p>
+                </div>
+            </div>
+            <div class="w3-col s12 m6 l4 w3-margin-bottom">
+                <div class="w3-card w3-3 w3-text-6 w3-round-large w3-padding-24">
+                    <h4>Software &amp; Prozesse</h4>
+                    <p class="w3-small">Dritte Spalte, erst ab 992px sichtbar nebeneinander.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-margin-top">
+            <button class="w3-button w3-1 w3-text-6 w3-round">Standard-Button</button>
+            <button class="w3-button w3-border w3-round">Button mit Rahmen</button>
+        </div>
+    </div>
+
+    <!-- FLEXBOX -->
+    <div class="w3-container w3-padding-32">
+        <h2 class="w3-border-bottom w3-padding-16">Flex-Utilities (_flex.scss)</h2>
+        <p>Angenommene Klassennamen nach unserer Planung – bitte gegen deine tatsächliche _flex.scss prüfen.</p>
+
+        <h4>Richtung &amp; Wrap</h4>
+        <div class="w3-flex w3-flex-row w3-border w3-3 w3-margin-bottom w3-padding">
+            <div class="w3-6 w3-text-5 w3-padding">1</div>
+            <div class="w3-6 w3-text-5 w3-padding">2</div>
+            <div class="w3-6 w3-text-5 w3-padding">3</div>
+            <p class="w3-small w3-margin-left">w3-flex w3-flex-row</p>
+        </div>
+        <div class="w3-flex w3-flex-column w3-border w3-3 w3-margin-bottom w3-padding">
+            <div class="w3-6 w3-text-5 w3-padding">1</div>
+            <div class="w3-6 w3-text-5 w3-padding">2</div>
+            <p class="w3-small">w3-flex w3-flex-column</p>
+        </div>
+
+        <h4>Justify-Content</h4>
+        <div class="w3-flex w3-flex-row w3-flex-justify-between w3-border w3-3 w3-margin-bottom w3-padding">
+            <div class="w3-6 w3-text-5 w3-padding">A</div>
+            <div class="w3-6 w3-text-5 w3-padding">B</div>
+            <div class="w3-6 w3-text-5 w3-padding">C</div>
+        </div>
+        <p class="w3-small">w3-flex-justify-between — analog: -start, -center, -end, -around</p>
+
+        <h4>Align-Items</h4>
+        <div class="w3-flex w3-flex-row w3-flex-items-center w3-border w3-3 w3-margin-bottom w3-padding" style="height: 80px;">
+            <div class="w3-6 w3-text-5 w3-padding">A</div>
+            <div class="w3-6 w3-text-5 w3-padding w3-xlarge">B</div>
+        </div>
+        <p class="w3-small">w3-flex-items-center — analog: -start, -end, -stretch</p>
+
+        <h4>Shortcut: alles zentriert</h4>
+        <div class="w3-flex w3-flex-center-all w3-border w3-3 w3-margin-bottom w3-padding" style="height: 100px;">
+            <div class="w3-6 w3-text-5 w3-padding">w3-flex-center-all</div>
+        </div>
+
+        <h4>Self-Alignment</h4>
+        <div class="w3-flex w3-flex-row w3-border w3-3 w3-margin-bottom w3-padding" style="height: 100px;">
+            <div class="w3-6 w3-text-5 w3-padding w3-flex-self-start">self-start</div>
+            <div class="w3-6 w3-text-5 w3-padding w3-flex-self-center">self-center</div>
+            <div class="w3-6 w3-text-5 w3-padding w3-flex-self-end">self-end</div>
+        </div>
+
+        <h4>Gap (8px-Raster)</h4>
+        <div class="w3-flex w3-flex-row w3-flex-gap-8 w3-border w3-3 w3-margin-bottom w3-padding">
+            <div class="w3-6 w3-text-5 w3-padding">1</div>
+            <div class="w3-6 w3-text-5 w3-padding">2</div>
+            <div class="w3-6 w3-text-5 w3-padding">3</div>
+        </div>
+        <p class="w3-small">w3-flex-gap-8 — analog: -16, -24, -32</p>
+
+        <h4>Grow / Shrink / None</h4>
+        <div class="w3-flex w3-flex-row w3-border w3-3 w3-margin-bottom w3-padding">
+            <div class="w3-6 w3-text-5 w3-padding w3-flex-none">none</div>
+            <div class="w3-6 w3-text-5 w3-padding w3-flex-grow">grow (nimmt Restplatz)</div>
+        </div>
+
+        <h4>Responsives Flex-Grid</h4>
+        <p class="w3-small">w3-flex-col-s{n} / -m{n} / -l{n}, Breakpoints wie gewohnt bei 600px / 992px.</p>
+        <div class="w3-flex w3-flex-row w3-flex-wrap w3-flex-gap-8">
+            <div class="w3-flex-col-s12 w3-flex-col-m6 w3-flex-col-l4 w3-3 w3-text-6 w3-padding w3-round">
+                w3-flex-col-s12 w3-flex-col-m6 w3-flex-col-l4
+            </div>
+            <div class="w3-flex-col-s12 w3-flex-col-m6 w3-flex-col-l4 w3-3 w3-text-6 w3-padding w3-round">
+                Spalte 2
+            </div>
+            <div class="w3-flex-col-s12 w3-flex-col-m6 w3-flex-col-l4 w3-3 w3-text-6 w3-padding w3-round">
+                Spalte 3
+            </div>
+        </div>
+    </div>
+
 </body>
-
 </html>
