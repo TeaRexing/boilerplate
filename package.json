@@ -30,12 +30,12 @@
     "build": "run-p build:*",
     "production": "npm run purge && run-p build:html build:js css:prod build:fonts build:assets && npm run compress:images",
     "purge": "rimraf public_html/",
-    "publish": "./sync.sh"
+    "publish": "./scripts/sync.sh"
   },
   "keywords": [],
   "author": "Patrick Zempel",
   "license": "ISC",
-  "devDependencies": {
+  "devDependencies": {0
     "@babel/preset-env": "^7.29.7",
     "@eslint/js": "^10.0.1",
     "autoprefixer": "^10.5.4",
